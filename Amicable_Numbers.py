@@ -1,14 +1,14 @@
-n=int(input())
-m=int(input())
-s1=0
-for i in range(1,n):
-    if n%i==0:
-        s1+=i
-s2=0
-for i in range(1,m):
-    if m%i==0:
-        s2+=i
-if s1==m and s2==n:
+a=int(input())
+b=int(input())
+pfs_a=0
+for i in range(1,a):
+    if a%i==0:
+        pfs_a+=i
+pfs_b=0
+for c in range(1,b):
+    if b%c==0:
+        pfs_b+=c
+if pfs_a==b and pfs_b==a:
     print('Amicable')
 else:
-    print("Not Amicable")
+    print('Not Amicable')
