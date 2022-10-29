@@ -1,6 +1,7 @@
 n=int(input())
-sqr=n*n
-if sqr%10==n or sqr%100==n or sqr%1000==n:
+sqr=n**2
+len_mod=pow(10,len(str(n)))
+if sqr%len_mod==n:
     print("Automorphic Number")
 else:
     print("Not an Automorphic Number")
